@@ -1,0 +1,19 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>String e Thymeleaf exemplos</title>
+</head>
+<body>
+	<ol>
+		<li th:each="exemplo:${exemplos}" > <a th:text="${exemplo.descricao}" th:href="@{${exemplo.url}}"></a> </li>
+	</ol>
+
+
+
+
+
+</body>
+</html>
