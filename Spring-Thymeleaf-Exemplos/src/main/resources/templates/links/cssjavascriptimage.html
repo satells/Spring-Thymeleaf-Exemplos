@@ -5,20 +5,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link rel="stylesheet" th:href="@{/css/style.css}">
+
 <title>String e Thymeleaf exemplos</title>
 
 </head>
 <body>
 
-<label th:text="${pedido.total}"></label>
+<button class="botao" type="button">Show Alert</button>
 
 
-<div>
-	Total: 
-	<span th:if="${pedido.total >=0 }" class="blue" th:text="${pedido.total}"></span>
-	<span th:unless="${pedido.total >=0 }" class="red" th:text="${pedido.total}"></span> 
-</div>
+<div><span class="red">vermelho</span> </div>
+<div><span class="blue">azul</span> </div>
+
+Imagem
+  <img th:src="@{/image/image.jpg}" alt="Minha Figura">
 
 
+
+
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
 </body>
 </html>

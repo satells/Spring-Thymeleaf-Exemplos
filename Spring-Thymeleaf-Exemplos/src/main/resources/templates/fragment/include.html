@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.com" lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<title>String e Thymeleaf exemplos</title>
+
+</head>
+<body>
+<h1>Include</h1>
+<article>Mante a tag abaixo, </article>
+<p><code style="color:blue;">&lt;section  th:include=&quot;fragment/fragment::formulario&quot;&gt;&lt;/section&gt;</code></p>
+
+
+e insere apenas o conteúdo do fragment
+<p> <code style="color:blue;">
+
+&lt;div th:fragment=&quot;formulario&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    
+&lt;form action=&quot;#&quot; th:object=&quot;${pessoa}&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;nome&quot;&gt;Nome&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot;th:field=&quot;*{nome}&quot; /&gt;<br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;endereco&quot;&gt;Endere&ccedil;o&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; th:field=*{endereco} /&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;numero&quot;&gt;N&uacute;mero&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; th:field=&quot;*{numero}&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
+&lt;/div&gt;
+</code> </p>
+
+
+
+
+<section  th:include="fragment/fragment::formulario"></section>
+
+
+</body>
+</html>

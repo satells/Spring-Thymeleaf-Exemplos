@@ -21,6 +21,10 @@ public class HomeController {
 		exemplos.add(new Exemplo("Enviando parametro texto", "/atributo/enviandoAtributo"));
 		exemplos.add(new Exemplo("Enviando parametro conjuntos", "/atributo/enviandoConjuntos"));
 		exemplos.add(new Exemplo("Estrutura - Condição", "/estrutura/condicao"));
+		exemplos.add(new Exemplo("Links - CSS/Javascript/Image", "/links/cssjavascriptimage"));
+		exemplos.add(new Exemplo("Fragment - replace", "/fragment/replace"));
+		exemplos.add(new Exemplo("Fragment - insert", "/fragment/insert"));
+		exemplos.add(new Exemplo("Fragment - include", "/fragment/include"));
 
 		model.addAttribute("exemplos", exemplos);
 
